@@ -12,4 +12,8 @@ class ApplicationController < ActionController::Base
     parameters = { limit: 10, term: genre}
     render json: Yelp.client.search(loc, parameters)
   end
+
+  def get_threshold_value(venue_id)
+    Ranking.count_threshold_define(venue_id)
+  end
 end
