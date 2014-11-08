@@ -1,24 +1,87 @@
-<h1>CrowdSurfer</h1>
+  <header class="nav__primary">
+    
+    <div class="container">
 
-<!-- <form id="search">
-  <label for="genre">Genre</label>
-  <input type="text" id="genre">
-  <input type="submit" value="Search">
-</form> -->
+      <div class="row">
+      
+        <div class="col-md-6"> 
+          <img class="nav__primary--logo" src="assets/Logo.png" alt="">
+        </div> <!-- end of col-md-6 -->
 
-<div id="search">
-  <% @genres.each do |g| %>
-    <details>
-      <summary><%= g.genre %></summary>
-      <ul>
-        <% g.sub_genres.each do |type| %>
-          <li>
-            <input type="checkbox" id=<%= type.sub_genre_names %> name="choice" value=<%= type.sub_genre_names %> /><label for="genre"><%= type.sub_genre_names %></label>
-            </li>
-        <% end %>
-      <ul>
-   </details>
-  <% end %>
-</div>
+        <div class="col-md-6">
 
-<div id="results"></div>
+          <ul class="nav__primary--list">
+            <li class="nav__primary--list--default"><a href="#">Blog</a></li>
+
+            <li class="nav__primary--list--default"><a href="#">Contact</a></li>
+
+            <li class="nav__primary--list--default"><a href="#">Settings</a></li>
+            
+            <li class="nav__primary--list--default"><a href="#">Log Out</a></li>
+          </ul><!--  end of nav__primary--list -->
+
+        </div> <!-- end of col-md-6 -->
+
+      </div> <!--  end of row -->
+
+    </div> <!-- end of container -->
+  
+  </header> <!-- end of nav__primary -->
+
+
+
+<div class="container">
+
+
+
+  <div class="row">
+       <div id="search" class="sidebar    ||     col-md-3">
+          <% @genres.each do |g| %>
+            <details>
+              <summary class="content__header--xxsmall"><%= g.genre %></summary>
+              <ul class="content__header--xxsmall sidebar--expanded">
+                <% g.sub_genres.each do |type| %>
+                  <li>
+                    <input type="checkbox" id=<%= type.sub_genre_names %> name="choice" value=<%= type.sub_genre_names %> /><label for="genre"><%= type.sub_genre_names %></label>
+                    </li>
+                <% end %>
+              <ul>
+           </details>
+          <% end %>
+      </div><!-- end of sidebar col-md-3 -->
+
+    <div class="sortby__container ||     col-md-9">
+      <div class="row">
+        
+        <h2 class="content__header--xxsmall sortby__label     ||     col-md-2">Sort By:</h2><!-- end of content__header--xxsmall sortby__label col-md-2-->
+      
+        <div class="pushcenter     ||     dropdown">
+            <button class="sortby__btn sortby__dropdown__label     ||     btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+              Dropdown
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+            </ul>
+        
+          <button type="button" class="viewtoggle__btn moveright     ||     btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">List</button>
+
+          <button type="button" class="viewtoggle__btn  ||    btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Grid</button>
+  
+
+        </div>
+      </div><!-- end of row-->  
+
+    </div><!-- end of sortby__container col-md-9--> 
+
+      <div id="results"></div>
+
+    </div><!-- end of row -->
+
+    </div>
+
+
+</div><!-- end of container -->

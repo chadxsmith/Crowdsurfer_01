@@ -1,0 +1,200 @@
+/**
+ * CONTENTS
+
+ * Multipage Elements 
+ 	*
+	body
+	h1, h2, h3
+	a
+	p
+
+ * Multipage Classes
+   .container	
+   .page--back-color
+   .page--font color
+   .nav__primary  
+   .nav__primary--list
+   .nav__primary--list li  
+   .nav__primary--list a 
+   .nav__primary--list--default   
+   .nav__sub--list--alt
+   .button
+   .button--med
+   .button__primary--active
+   .btn-default  
+
+ * Contact Page (01_contact) classes
+	.contact__forms 
+	.content__supporting--text
+    .content__header--medium 
+    .contact__forms--label
+    .contact__forms--label--email 
+    .contact__forms--group 
+    .contact__forms--small
+    .contact__forms--medium 
+    .contact__forms--large 
+    .contact__button
+  */
+
+/*__________________________*/
+/* #Layout-Global  */
+/*__________________________*/
+.container {
+	width: 1100px;
+}
+.page--background-color {
+	background: #32425c
+}
+.page--font-color {
+	font-family: 'Dosis', sans-serif;
+	color: #ecf0f1;
+}
+/*__________________________*/
+/* #Content-Global  */
+/*__________________________*/
+.content__header--xxsmall {
+	font-size: 18px;
+}
+
+.content__header--xsmall {
+	font-size: 40px;
+}
+
+.content__header--small {
+	font-size: 50px;
+}
+
+.content__header--medium {
+	font-size: 60px;
+}
+
+.content__header--large {
+	font-size: 70px;
+}
+
+/*__________________________*/
+/* #Primary_Navigation-Global  */
+/*__________________________*/
+.nav__primary--nobackground {
+	padding-top: 20px;
+	padding-bottom: 20px;	
+}
+.nav__primary {
+	background: #9b59b6;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.nav__primary--list{
+	list-style-type: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	margin-top: 13px;
+}
+
+.nav__primary--list li {
+	display: inline;
+	margin-bottom: 1000px;
+}
+
+.nav__primary--list a {
+	font-size: 12px;
+	color: white;
+} 
+
+.nav__primary--list--default{
+	padding-right: 20px;
+}
+
+.nav__primary--list--alt {
+	border: 3px solid #fcfdfd;
+	padding: 10px;
+}
+/*__________________________*/
+/* #Sub_Navigation-Global  */
+/*__________________________*/
+
+.nav__sub {
+	background:#ebeef0;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.nav__sub--list{
+	list-style-type: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+	margin-top: 13px;
+}
+
+.nav__sub--list li {
+	display: inline;
+}
+
+.nav__sub--list a {
+	font-size: 12px;
+	color: #7a7677;
+} 
+
+.nav__sub--list--default{
+	padding-right: 20px;
+}
+
+.nav__sub--list--alt {
+	padding-left: 410px;
+	color: #7a7677;
+}
+
+/*__________________________*/
+/* #Buttons-Global  */
+/*__________________________*/
+.button {
+	font-family: 'Dosis', sans-serif;
+}
+.button__primary--active {
+	background: #e80cb4;
+}
+.button--med {
+	padding: 20px;
+	width: 25%;
+}
+.btn-default {
+	border-color:transparent;
+	text-shadow: none;
+	box-shadow: none;
+	color: #ecf0f1;
+}
+
+/*__________________________*/
+/* #Input_Labels-Global */
+/*__________________________*/
+.input__forms--label {
+	font-size: 20px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 100; 
+	padding-top: 20px;
+	font-style: normal;
+}
+
+.input__forms--group {
+	background-color: #d7d8db;
+	display: inline;
+}
+
+.input__form {
+	padding: 30px;
+}
+
+.input__forms--right {
+	float: right;
+}
+
+
+/*__________________________*/
+/* #Input_Fields-Global */
+/*__________________________*/
+
+

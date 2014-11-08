@@ -1,0 +1,72 @@
+/*__________________________*/
+/* #Content-Login  */
+/*__________________________*/
+.login__forms {
+	padding-top: 5%;
+	padding-bottom:5%
+}
+.characters {
+	padding-top: 2%;
+	padding-bottom: 2%;
+  	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*__________________________*/
+/* #Header-Login  */
+/*__________________________*/
+.login__header_style {
+	text-align: center;
+}
+
+/*__________________________*/
+/* #Input_Group-Login  */
+/*__________________________*/
+.login__form-group_style {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*__________________________*/
+/* #Input_Labels-Login */
+/*__________________________*/
+.input__forms--label--log_position {
+	padding-left: 27%;
+}
+
+
+
+
+
+
+/*__________________________*/
+/* #Input_Fields-Login */
+/*__________________________*/
+.input__forms--small--contact_style {
+	margin-left: 4%;
+	width: 78%;
+}
+.input__forms--small--login--email_position {
+	margin-left: 9%;
+}
+
+
+
+
+
+/*__________________________*/
+/* #Input_Button-Login */
+/*__________________________*/
+.login__button_style {
+	font-size: 20px;
+}
+.login__button_position {	
+    margin-top: 3%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

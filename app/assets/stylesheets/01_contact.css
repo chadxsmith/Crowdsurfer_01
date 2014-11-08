@@ -1,0 +1,76 @@
+/*__________________________*/
+/* #Content-Contact  */
+/*__________________________*/
+.contact__forms {
+	padding-top: 2%;
+	padding-bottom: 5%;
+}
+.content__supporting--text{
+	font-size: 20px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 100; 
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+
+
+/*__________________________*/
+/* #Header-Contact  */
+/*__________________________*/
+
+
+
+
+
+/*__________________________*/
+/* #Input_Labels-Contact */
+/*__________________________*/
+.input__forms--label {
+	font-size: 20px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 100; 
+	padding-top: 20px;
+	font-style: normal;
+}
+.input__forms--label--email {
+	padding-left: 83%;
+}
+	
+
+
+/*__________________________*/
+/* #Input_Fields-Contact */
+/*__________________________*/
+.input__forms--small--contact_style {
+	width: 84%;
+}
+.input__forms--small--contact_position {
+	margin-left: 5.8%;
+}
+
+.input__forms--medium--contact_style {
+	width: 92%;
+}
+.input__forms--medium--contact_position {
+	margin-left: 2%;
+}
+
+.input__forms--large--contact_style {
+	margin-left: 16px;
+	width: 91.8%;
+	padding-bottom: 160px;
+}
+
+
+
+/*__________________________*/
+/* #Input_Button-Contact */
+/*__________________________*/
+.contact__button_style {
+	font-size: 20px;
+}
+.contact__button_position {
+	margin-left: 87px;	
+}
