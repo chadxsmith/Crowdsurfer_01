@@ -14,8 +14,8 @@
 ActiveRecord::Schema.define(version: 20141108192202) do
 
   create_table "genre_locations", force: true do |t|
-    t.integer "location_id", null: false
-    t.integer "genre_id",    null: false
+    t.integer "location_id",  null: false
+    t.integer "sub_genre_id", null: false
   end
 
   create_table "genres", force: true do |t|

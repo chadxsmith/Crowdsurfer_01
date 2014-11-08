@@ -33,3 +33,10 @@ SubGenre.find(9).update_attributes(genre_id: 3)
 SubGenre.find(10).update_attributes(genre_id: 3)
 SubGenre.find(11).update_attributes(genre_id: 3)
 SubGenre.find(12).update_attributes(genre_id: 3)
+
+city_state = {"Washington" => "DC", "New York City" => "NY", "Baltimore" => "MD",
+			  "Los Angeles" => "CA", "Miami" => "FL"}
+
+city_state.each do |city,state|
+	Location.create(city: city, state: state)
+end 
