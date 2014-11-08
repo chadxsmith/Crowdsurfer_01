@@ -31,6 +31,7 @@ $(document).ready(function(){
         var venue = data.businesses[i];          
         var address = venue['location']['display_address'];
         var categories = venue['categories'];
+        var rating = venue['rating']
 
         // console.log(categories);
 
@@ -63,7 +64,7 @@ $(document).ready(function(){
               venueImg = 'http://media.miamimusicweek.com/2012/12/venue-default.jpg';
             };
 
-            $('#results').append("<div class='venue'><h3><a href='" + venue['url'] + "' target='_blank'>" + venue['name'] + "</a></h3><img src='" + venueImg + "'><p>" + addressBlock + "</p></div>");
+            $('#results').append("<div class='venue'><h3><a href='" + venue['url'] + "' target='_blank'>" + venue['name'] + "</a>: " + rating + "</h3><img src='" + venueImg + "'><p>" + addressBlock + "</p></div>");
 
           };
         };

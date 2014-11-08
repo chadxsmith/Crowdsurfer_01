@@ -9,11 +9,20 @@ class ApplicationController < ActionController::Base
   def search
     genre = params[:genre]
     loc = "20005"
-    parameters = { limit: 10, term: genre}
-    render json: Yelp.client.search(loc, parameters)
+    parameters = { limit: 1, term: genre}
+    object = Yelp.client.search(loc, parameters)
+    
+    # object.businesses.each do |venue|
+    #   review_count = venue.review_count
+
+    #   Venue.create(name: venue_name, location: venue_location)
+    # end
+    render json: object
   end
 
   def get_threshold_value(venue_id)
     Ranking.count_threshold_define(venue_id)
   end
 end
+
+
