@@ -32,9 +32,25 @@ $(document).ready(function(){
         var address = venue['location']['display_address'];
         var categories = venue['categories'];
 
-        for (var i = 0; i < categories.length; i++) {
-          console.log(categories[i]);
-        }
+        // console.log(categories);
+
+        if (categories) {
+          var firstCategoryArr = categories[0] || "nothing";
+          var secondCategoryArr = categories[1] || "nothing";
+          var thirdCategoryArr = categories[2] || "nothing";
+
+          var firstCategory = firstCategoryArr[1] || "nothing";
+          var secondCategory = secondCategoryArr[1] || "nothing";
+          var thirdCategory = thirdCategoryArr[1] || "nothing";
+
+          if (firstCategory == "danceclubs" || secondCategory == "danceclubs" || thirdCategory == "danceclubs") {
+            console.log(venue['id'] + ": is a danceclub");
+          };
+
+          // console.log(firstCategory);
+          // console.log(secondCategory);
+          // console.log(thirdCategory);
+        };
 
         if (address[2]) {
           var addressBlock = address[0] + '<br>' + address[1] + '<br>' + address[2];
