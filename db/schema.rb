@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141108170947) do
+ActiveRecord::Schema.define(version: 20141108192202) do
 
   create_table "genre_locations", force: true do |t|
     t.integer "location_id", null: false
@@ -20,6 +20,17 @@ ActiveRecord::Schema.define(version: 20141108170947) do
 
   create_table "genres", force: true do |t|
     t.string "genre", null: false
+  end
+
+  create_table "locations", force: true do |t|
+    t.string  "city",               null: false
+    t.string  "state",    limit: 2, null: false
+    t.integer "zip_code"
+  end
+
+  create_table "sub_genres", force: true do |t|
+    t.string  "sub_genre_names"
+    t.integer "genre_id"
   end
 
   create_table "venue_rankings", force: true do |t|
