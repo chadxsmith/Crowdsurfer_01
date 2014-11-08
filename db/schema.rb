@@ -35,12 +35,8 @@ ActiveRecord::Schema.define(version: 20141108192202) do
   end
 
   create_table "venues", force: true do |t|
-    t.string  "venue_name",             null: false
-    t.string  "address"
-    t.string  "city"
-    t.string  "country_code", limit: 3
-    t.integer "postal_code"
-    t.string  "state_code"
+    t.string  "venue_name",  null: false
+    t.integer "location_id", null: false
   end
 
 end

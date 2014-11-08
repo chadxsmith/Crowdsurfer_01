@@ -18,9 +18,9 @@
 
 $(document).ready(function(){
 
-  $("#search").on('submit', function(event){
+  $('input:checkbox').change(function(event){
     event.preventDefault();
-    searchTerm = $('#genre').val();
+    searchTerm = $(this).val();
 
     $.post('/search', { genre: searchTerm }, function(data){
       console.log(data);
@@ -72,6 +72,5 @@ $(document).ready(function(){
 
     });
 
-    $('#genre').val('');
   });
 });

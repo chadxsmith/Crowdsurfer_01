@@ -8,31 +8,14 @@
 
 <div id="search">
   <details>
-    <summary>House</summary>
+    <summary>Genres from Database</summary>
     <ul>
-      <li><input type="checkbox" id="chicago" name="choice" value="chicago" /><label for="genre">Chicago</label></li>
-      <li><input type="checkbox" id="deep" name="choice" value="deep" /><label for="genre">Deep</label></li>
-      <li><input type="checkbox" id="french" name="choice" value="french" /><label for="genre">French</label></li>
-      <li><input type="checkbox" id="moombathon" name="choice" value="moombathon" /><label for="genre">Moombathon</label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Techno</summary>
+      <% @genres.each do |type| %>
+        <li>
+          <input type="checkbox" id=<%= type.genre %> name="choice" value=<%= type.genre %> /><label for="genre"><%= type.genre %></label>
+          </li>
+      <% end %>
     <ul>
-      <li><input type="checkbox" id="acid" name="choice" value="acid" /><label for="genre">Acid</label></li>
-      <li><input type="checkbox" id="detroid" name="choice" value="detroit" /><label for="genre">Detroit</label></li>
-      <li><input type="checkbox" id="hard" name="choice" value="hard" /><label for="genre">Hard</label></li>
-      <li><input type="checkbox" id="minimal" name="choice" value="minimal" /><label for="genre">Minimal</label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>UK Garage</summary>
-    <ul>
-      <li><input type="checkbox" id="dubstep" name="choice" value="dubstep" /><label for="genre">Dubstep</label></li>
-      <li><input type="checkbox" id="future-randb" name="choice" value="future r and b" /><label for="genre">Future R&amp;B</label></li>
-      <li><input type="checkbox" id="grime" name="choice" value="grime" /><label for="genre">Grime</label></li>
-      <li><input type="checkbox" id="uk-funk" name="choice" value="uk funk" /><label for="genre">UK Funk</label></li>
-    </ul>
   </details>
 </div>
 

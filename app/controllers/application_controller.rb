@@ -4,12 +4,13 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def index
+    @genres = Genre.all
   end
 
   def search
     genre = params[:genre]
     loc = "20005"
-    parameters = { limit: 1, term: genre}
+    parameters = { limit: 10, term: genre}
     object = Yelp.client.search(loc, parameters)
     
     # object.businesses.each do |venue|
