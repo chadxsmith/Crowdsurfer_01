@@ -22,6 +22,12 @@ ActiveRecord::Schema.define(version: 20141108170947) do
     t.string "genre", null: false
   end
 
+  create_table "locations", force: true do |t|
+    t.string  "city",               null: false
+    t.string  "state",    limit: 2, null: false
+    t.integer "zip_code"
+  end
+
   create_table "venue_rankings", force: true do |t|
     t.integer "venue_id"
     t.integer "location_id"
