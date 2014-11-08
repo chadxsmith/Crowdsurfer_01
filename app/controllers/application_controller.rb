@@ -9,8 +9,8 @@ class ApplicationController < ActionController::Base
 
   def search
     genre = params[:genre]
-    loc = "20005"
-    parameters = { limit: 10, term: genre}
+    loc = "nyc"
+    parameters = { limit: 10, term: genre, category_filter: "danceclubs"}
     object = Yelp.client.search(loc, parameters)
     
     # object.businesses.each do |venue|

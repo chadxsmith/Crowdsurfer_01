@@ -7,16 +7,18 @@
 </form> -->
 
 <div id="search">
-  <details>
-    <summary>Genres from Database</summary>
-    <ul>
-      <% @genres.each do |type| %>
-        <li>
-          <input type="checkbox" id=<%= type.genre %> name="choice" value=<%= type.genre %> /><label for="genre"><%= type.genre %></label>
-          </li>
-      <% end %>
-    <ul>
-  </details>
+  <% @genres.each do |g| %>
+    <details>
+      <summary><%= g.genre %></summary>
+      <ul>
+        <% g.sub_genres.each do |type| %>
+          <li>
+            <input type="checkbox" id=<%= type.sub_genre_names %> name="choice" value=<%= type.sub_genre_names %> /><label for="genre"><%= type.sub_genre_names %></label>
+            </li>
+        <% end %>
+      <ul>
+   </details>
+  <% end %>
 </div>
 
 <div id="results"></div>

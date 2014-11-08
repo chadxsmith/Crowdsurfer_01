@@ -22,6 +22,12 @@ ActiveRecord::Schema.define(version: 20141108192202) do
     t.string "genre", null: false
   end
 
+  create_table "locations", force: true do |t|
+    t.string  "city",               null: false
+    t.string  "state",    limit: 2, null: false
+    t.integer "zip_code"
+  end
+
   create_table "sub_genres", force: true do |t|
     t.string  "sub_genre_names"
     t.integer "genre_id"
@@ -35,8 +41,12 @@ ActiveRecord::Schema.define(version: 20141108192202) do
   end
 
   create_table "venues", force: true do |t|
-    t.string  "venue_name",  null: false
-    t.integer "location_id", null: false
+    t.string  "venue_name",             null: false
+    t.string  "address"
+    t.string  "city"
+    t.string  "country_code", limit: 3
+    t.integer "postal_code"
+    t.string  "state_code"
   end
 
 end
