@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  root :to => "application#index"
+
+  post '/search' => 'application#search'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
