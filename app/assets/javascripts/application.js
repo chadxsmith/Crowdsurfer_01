@@ -35,36 +35,38 @@ $(document).ready(function(){
         // console.log(categories);
 
         if (categories) {
-          var firstCategoryArr = categories[0] || "nothing";
-          var secondCategoryArr = categories[1] || "nothing";
-          var thirdCategoryArr = categories[2] || "nothing";
+          var firstCategory = categories[0][1];
+          // console.log(firstCategory);
 
-          var firstCategory = firstCategoryArr[1] || "nothing";
-          var secondCategory = secondCategoryArr[1] || "nothing";
-          var thirdCategory = thirdCategoryArr[1] || "nothing";
+          if (categories[1]) {
+            var secondCategory = categories[1][1];
+            // console.log(secondCategory);
+          };
+
+          if (categories[2]) {
+            var thirdCategory = categories[2][1];
+            // console.log(thirdCategory); 
+          };
 
           if (firstCategory == "danceclubs" || secondCategory == "danceclubs" || thirdCategory == "danceclubs") {
             console.log(venue['id'] + ": is a danceclub");
+
+            if (address[2]) {
+              var addressBlock = address[0] + '<br>' + address[1] + '<br>' + address[2];
+            } else {
+              var addressBlock = address[0] + '<br>' + address[1] + '<br> ';
+            };
+
+            if (venue['image_url']) {
+              venueImg = venue['image_url'];
+            } else {
+              venueImg = 'http://media.miamimusicweek.com/2012/12/venue-default.jpg';
+            };
+
+            $('#results').append("<div class='venue'><h3><a href='" + venue['url'] + "' target='_blank'>" + venue['name'] + "</a></h3><img src='" + venueImg + "'><p>" + addressBlock + "</p></div>");
+
           };
-
-          // console.log(firstCategory);
-          // console.log(secondCategory);
-          // console.log(thirdCategory);
         };
-
-        if (address[2]) {
-          var addressBlock = address[0] + '<br>' + address[1] + '<br>' + address[2];
-        } else {
-          var addressBlock = address[0] + '<br>' + address[1] + '<br> ';
-        };
-
-        if (venue['image_url']) {
-          venueImg = venue['image_url'];
-        } else {
-          venueImg = 'http://media.miamimusicweek.com/2012/12/venue-default.jpg';
-        };
-
-        $('#results').append("<div class='venue'><h3><a href='" + venue['url'] + "' target='_blank'>" + venue['name'] + "</a></h3><img src='" + venueImg + "'><p>" + addressBlock + "</p></div>");
       }
 
     });
