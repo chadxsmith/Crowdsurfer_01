@@ -37,17 +37,17 @@
   <div class="row">
        <div id="search" class="sidebar    ||     col-md-3">
           <% @genres.each do |g| %>
-            <details>
-              <summary class="content__header--xxsmall"><%= g.genre %></summary>
+              <h3 class="content__header--xxsmall"><%= g.genre %></h3>
               <ul class="content__header--xxsmall sidebar--expanded">
                 <% g.sub_genres.each do |type| %>
                   <li>
                     <input type="checkbox" id=<%= type.sub_genre_names %> name="choice" value=<%= type.sub_genre_names %> /><label for="genre"><%= type.sub_genre_names %></label>
                     </li>
                 <% end %>
-              <ul>
-           </details>
-          <% end %>
+          
+              </ul>
+              <% end %>
+
       </div><!-- end of sidebar col-md-3 -->
 
     <div class="sortby__container ||     col-md-9">
@@ -77,7 +77,7 @@
 
     </div><!-- end of sortby__container col-md-9--> 
 
-      <div id="results"></div>
+      <div id="results" class="col-md-9"></div>
 
     </div><!-- end of row -->
 

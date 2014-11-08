@@ -47,7 +47,7 @@ $(document).ready(function(){
           venueImg = 'http://media.miamimusicweek.com/2012/12/venue-default.jpg';
         };
 
-        $('#results').append("<div class='venue'><h3><a href='" + venue['url'] + "' target='_blank'>" + venue['name'] + "</a>: " + rating + "</h3><img src='" + venueImg + "'><p>" + addressBlock + "</p></div>");
+        $('#results').append("<div class='row'><div class='col-md-12'><div class='venue'><div class='col-md-4'><img src='" + venueImg + "'></div><div class='col-md-6'><h3><a href='" + venue['url'] + "' target='_blank'>" + venue['name'] + "</a>: " + rating + "</h3><p>" + addressBlock + "</p></div></div></div></div>");
       };
     });
   });

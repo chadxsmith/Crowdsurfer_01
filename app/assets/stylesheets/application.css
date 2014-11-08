@@ -33,3 +33,28 @@ summary:after {
 details[open] summary:after {
   content: "-";
 }
+
+#results {
+  float: right;
+}
+
+.venue h3 {
+  color: red;
+}
+
+.venue img {
+  height: 200px;
+  width: 200px;
+}
+
+#search ul li {
+  list-style-type: none;
+}
+
+input[type='checkbox'] {
+  margin: 0px 5px;
+}
+
+
+
+
