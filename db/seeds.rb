@@ -5,11 +5,16 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Genre.create(genre: "house")
-Genre.create(genre: "trance")
-Genre.create(genre: "techno")
-Genre.create(genre: "hiphop")
-Genre.create(genre: "electronic")
-Genre.create(genre: "edm")
-Genre.create(genre: "rap")
-Genre.create(genre: "dance")
+
+genre_array = ['House', 'UK Garage', 'Techno']
+
+genre_array.each do |s|
+	Genre.create(genre: s)
+end
+
+array = ['Chicago', 'Deep', 'French', 'Moonbathon', 'Dubstep', 'Future R&B',
+		 'Grime', 'UK Funk', 'Acid', 'Detroit', 'Hard', 'Minimal']
+
+array.each do |s|
+	SubGenre.create(sub_genre_names: s)
+end
