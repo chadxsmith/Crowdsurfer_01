@@ -3,13 +3,13 @@
 /*__________________________*/
 
 .sidebar {
-	background: #95a5a6;
+	background: #e6e3e3;
 	padding-bottom: 2%;
-	padding-top: 2%;
+	padding-top: 5.5%;
 }
 .sidebar--expanded {
-	background: #f0eaef;
-	color: #898488;
+	background: #95a5a6;
+	color: white;
 	padding-top: 3%;
 	padding-bottom: 3%;
 	width: 99%;
