@@ -39,6 +39,7 @@
 /*__________________________*/
 /* #Layout-Global  */
 /*__________________________*/
+
 .container {
 	width: 1100px;
 }
@@ -50,12 +51,11 @@
 	color: #ecf0f1;
 }
 .pad__left--xxsmall {
-	/*padding-left: 9px;*/
+	padding-left: 9px;
 }
 .pad__left--medium {
 	/*padding-left: 40px;*/
 }
-
 .pad__bottom--xsmall {
 /*	padding-bottom: 20px;*/
 }
@@ -71,12 +71,23 @@
 /*	padding-bottom: 120px;*/
 }
 
+
+.marg__left--xxsmall {
+	margin-left: 2px;
+}
+
+.mar___top--xxsmall--remove {
+	margin-top: -10px;
+}
+
+.color {
+	color: purple;
+}
 /*__________________________*/
 /* #Content-Global  */
 /*__________________________*/
 .content__header--xxsmall {
 	font-size: 18px;
-/*	color: #34495e;*/
 }
 
 .content__header--xsmall {
@@ -94,7 +105,9 @@
 .content__header--large {
 	font-size: 70px;
 }
-
+.header___color--blue {
+	color: #32425c
+}
 /*__________________________*/
 /* #Primary_Navigation-Global  */
 /*__________________________*/
