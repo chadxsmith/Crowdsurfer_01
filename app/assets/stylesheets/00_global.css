@@ -70,8 +70,19 @@
 .pad__bottom--medium {
 /*	padding-bottom: 120px;*/
 }
+.pad___top--xxsmall {
+	padding-top: 1%;
+}
 
-
+.color {
+	color: blue;
+}
+.marg__right--large {
+	margin-left: 74%;
+}
+.float__right {
+	float: right;
+}
 .marg__left--xxsmall {
 	margin-left: 2px;
 }
