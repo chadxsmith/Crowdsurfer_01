@@ -34,10 +34,10 @@
 
 
 
-  <div class="row">
+  <div class="row results__border">
        <div id="search" class="sidebar    ||     col-md-3">
           <% @genres.each do |g| %>
-              <h3 class="content__header--xxsmall"><%= g.genre %></h3>
+              <h3 class="content__header--xxsmall header___color--blue"><%= g.genre %></h3>
               <ul class="content__header--xxsmall sidebar--expanded">
                 <% g.sub_genres.each do |type| %>
                   <li>
@@ -50,10 +50,10 @@
 
       </div><!-- end of sidebar col-md-3 -->
 
-    <div class="sortby__container ||     col-md-9">
-      <div class="row">
+    <div class="sortby__container marg__left--xxsmall ||     col-md-8 width">
+       <div class="row">
         
-        <h2 class="content__header--xxsmall sortby__label     ||     col-md-2">Sort By:</h2><!-- end of content__header--xxsmall sortby__label col-md-2-->
+        <h2 class="content__header--xxsmall sortby__label     ||     col-md-2">Sort By:</h2><!-- end of content__header--xxsmall sortby__label col-md-2 -->
       
         <div class="pushcenter     ||     dropdown">
             <button class="sortby__btn sortby__dropdown__label     ||     btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
@@ -72,14 +72,14 @@
           <button type="button" class="viewtoggle__btn  ||    btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Grid</button>
   
 
-        </div>
+        </div><!-- end of pushcenter     ||     dropdown-->
       </div><!-- end of row-->  
 
     </div><!-- end of sortby__container col-md-9--> 
 
       <div id="results" class="col-md-9"></div>
 
-    </div><!-- end of row -->
+    </div><!-- end of row results__border -->
 
     </div>
 

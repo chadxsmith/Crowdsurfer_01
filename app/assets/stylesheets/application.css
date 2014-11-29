@@ -39,12 +39,17 @@ details[open] summary:after {
 }
 
 .venue h3 {
-  color: red;
+/*  color: red;*/
 }
 
 .venue img {
-  height: 200px;
-  width: 200px;
+  height: 190px;
+  width: 190px;
+  border-bottom: 40px solid white;
+  border-top: 10px solid white;
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+   
 }
 
 #search ul li {
@@ -56,8 +61,8 @@ input[type='checkbox'] {
 }
 
 .venue {
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 90px;
 }
-
 
 

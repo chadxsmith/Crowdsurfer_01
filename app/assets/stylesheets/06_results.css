@@ -1,15 +1,19 @@
 /*__________________________*/
 /* #Content_Labels-Results */
 /*__________________________*/
+.results__border {
+	border: 4px #e6e3e3 solid;
+	padding: 2px;
+}
 
 .sidebar {
-	background: #95a5a6;
-	padding-bottom: 2%;
-	padding-top: 2%;
+	background: #e6e3e3;
+	padding-bottom: 16%;
+	padding-top: 5.5%;
 }
 .sidebar--expanded {
-	background: #f0eaef;
-	color: #898488;
+	background: #95a5a6;
+	color: white;
 	padding-top: 3%;
 	padding-bottom: 3%;
 	width: 99%;
@@ -18,8 +22,10 @@
 
 .sortby__container {
 	background: #e6e3e3;
- 	position: relative;
  	border: 1px solid #e6e3e3;
+}
+.width {
+	width: 80px;
 }
 .sortby__label {
 	color: #34495e;
@@ -40,7 +46,7 @@
 
 .viewtoggle__btn {
 	background: #bdc3c7;
-	float: 
+	float: ;
 }
 .moveright {
 	margin-left: 30%;
